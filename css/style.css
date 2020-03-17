@@ -23,12 +23,30 @@ Smoke Grey: ​#e5e5e5 */
 
 .logo {
     margin-top: 170px;
+    position: relative;
+    z-index: 100;
 }
 
 .jumbotron {
     background-image: url('/img/bg.jpg');
     height: 520px;
     margin-top: -75px;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    bottom: 0;
 }
 
 .tag-line {
@@ -39,11 +57,11 @@ Smoke Grey: ​#e5e5e5 */
 }
 
 .tag-line h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .tag-line h2 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .card-text {
@@ -114,17 +132,41 @@ Smoke Grey: ​#e5e5e5 */
     }
     .logo {
         margin-top: 60px;
+        position: relative;
+        z-index: 100;
     }
     .jumbotron {
         background-image: url('/img/bg.jpg');
+        background-size: cover;
         height: 520px;
         margin-top: -75px;
+        z-index: 1;
+        position: relative;
+    }
+    .jumbotron .container {
+        position: relative;
+        z-index: 1;
+    }
+    .jumbotron::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     }
     .tag-line {
         margin-top: 80px;
         text-align: center;
         color: white;
         text-shadow: 0 0 3px rgb(20, 20, 20);
+    }
+    .tag-line h1 {
+        font-size: 60px;
+    }
+    .tag-line h2 {
+        font-size: 30px;
     }
     .lead {
         text-align: center;
