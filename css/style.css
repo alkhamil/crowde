@@ -14,11 +14,15 @@ Smoke Grey: ​#e5e5e5 */
 
 .notification {
     background: ​#e5e5e5;
-    height: 180px;
+    padding: 8px;
 }
 
 .notification .content-notif {
     text-align: left;
+}
+
+.logo {
+    margin-top: 170px;
 }
 
 .jumbotron {
@@ -91,10 +95,13 @@ Smoke Grey: ​#e5e5e5 */
 @media (min-width: 920px) {
     .notification {
         background: ​#e5e5e5;
-        height: 80px;
+        padding: 8px;
     }
     .notification .content-notif {
         text-align: justify;
+    }
+    .logo {
+        margin-top: 60px;
     }
     .jumbotron {
         background-image: url('/img/bg.jpg');
