@@ -1,0 +1,152 @@
+/* 
+Blue: ​#007bc1 
+
+Dark blue: ​#004a75 
+
+Orange: ​#ff8000 
+
+Dark orange: ​#cc6600 
+
+Smoke Grey: ​#e5e5e5 */
+
+
+/* Mobile */
+
+.notification {
+    background: ​#e5e5e5;
+    height: 180px;
+}
+
+.notification .content-notif {
+    text-align: left;
+}
+
+.jumbotron {
+    background-image: url('/img/bg.jpg');
+    height: 520px;
+    margin-top: -75px;
+}
+
+.tag-line {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 3px rgb(20, 20, 20);
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+.highlights-panel {
+    margin-top: -35px;
+    background: #e5e5e5;
+}
+
+.footer {
+    background-color: #004a75;
+}
+
+#footer-text {
+    color: #e5e5e5;
+}
+
+.newslatter {
+    position: fixed;
+    width: auto;
+    padding: 20px;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    background-color: #007bc1;
+    color: #FFF;
+    text-align: center;
+    opacity: 0.9;
+    font-size: 30px;
+    box-shadow: 2px 5px 8px #999;
+    z-index: 100;
+}
+
+.newslatter h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.newslatter p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.btn-subcribe {
+    margin-top: 5px;
+}
+
+.btn-subcribe button {
+    width: 100%;
+}
+
+
+/* Descktop */
+
+@media (min-width: 920px) {
+    .notification {
+        background: ​#e5e5e5;
+        height: 80px;
+    }
+    .notification .content-notif {
+        text-align: justify;
+    }
+    .jumbotron {
+        background-image: url('/img/bg.jpg');
+        height: 520px;
+        margin-top: -75px;
+    }
+    .tag-line {
+        margin-top: 80px;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 3px rgb(20, 20, 20);
+    }
+    .lead {
+        text-align: center;
+    }
+    .card-text {
+        font-size: 15px;
+    }
+    .highlights-panel {
+        margin-top: -35px;
+        background: #e5e5e5;
+    }
+    .footer {
+        background-color: #004a75;
+    }
+    .newslatter {
+        position: fixed;
+        width: 550px;
+        padding: 30px;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        background-color: #007bc1;
+        color: #FFF;
+        text-align: center;
+        opacity: 0.9;
+        box-shadow: 2px 5px 8px #999;
+        z-index: 100;
+    }
+    .newslatter #close {
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .newslatter h3 {
+        font-size: 20px;
+        text-align: left;
+    }
+    .newslatter p {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .btn-subcribe {
+        margin-top: -10px
+    }
+}
