@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 mt-2">
-                        <button class="btn btn-primary" onclick="closeNotif()">Got it</button>
+                        <button class="btn btn-info" onclick="closeNotif()">Got it</button>
                     </div>
                 </div>
             </div>
@@ -225,10 +225,10 @@
         }
 
         function closeNotif() {
-            $('.logo').attr('style', 'margin-top:0');
             $('.notif').slideUp('slow', function() {
                 $(this).hide();
             });
+            $('.logo').attr('style', 'margin-top:0');
         }
 
         setTimeout(() => {
